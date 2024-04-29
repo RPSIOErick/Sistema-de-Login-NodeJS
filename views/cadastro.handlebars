@@ -1,0 +1,31 @@
+<form action="/cadastrar" method="POST">
+
+    <h2> CADASTRAR </h2> <br>
+
+    <ul>
+
+        {{#if erros}}
+            {{#each erros}}
+                <li>{{mensagem}}</li>
+            {{/each}}
+        {{/if}}
+
+    </ul>
+
+    <br>
+
+    <input type="text" name="Nome" placeholder="Insira seu nome"> <br>
+    <input type="text" name="Email" placeholder="Insira seu e-mail"> <br>
+    <input type="password" name="Senha1" id="Senha1" placeholder="Insira sua senha"> <br>
+    <input type="password" name="Senha2" id="Senha2" placeholder="Confirme a senha..."> 
+
+    <br>
+    <br>
+
+    <button type="submit"> Cadastrar </button>
+
+</form>
+
+<br>
+
+<a href="/usuario/entrar"> Já registrado? Entre por aqui! </a>

@@ -1,0 +1,34 @@
+<form action="/usuario/login" method="POST">
+
+    <h2> ENTRAR </h2> <br>
+
+    <br>
+
+    <ul>
+
+    {{#if messages.success_msg}}
+        <li >{{messages.success_msg}}</li>
+    {{/if}}
+
+    {{#if messages.error_msg}}
+        <li >{{messages.error_msg}}</li>
+    {{/if}}
+
+    </ul>
+
+
+
+
+    <input type="text" name="Email" placeholder="Seu e-mail..."> <br>
+    <input type="password" name="Senha" id="Senha1" placeholder="Sua senha..."> <br>
+
+    <br>
+    <br>
+
+    <button type="submit">Entrar</button>
+
+</form>
+
+<br>
+
+<a href="/usuario/registrar"> Não tem uma conta? Faça uma já! </a>
